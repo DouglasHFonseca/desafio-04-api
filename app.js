@@ -20,9 +20,10 @@ const app = express();
 //define o dominio de origem para consumo do servico
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+//endereço do front end
 app.use(
   cors({
-    origin: 'http://localhost:8080',
+    origin: 'https://desafio-final04-igti.herokuapp.com/',
   })
 );
 
